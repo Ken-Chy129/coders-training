@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>coders-training</artifactId>
+        <groupId>cn.ken</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>problem-api</module>
+        <module>problem-generator</module>
+        <module>problem-service</module>
+    </modules>
+
+    <artifactId>problem-provider</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <swagger.version>3.0.0</swagger.version>
+        <knife4j.version>3.0.2</knife4j.version>
+        <mybatis.version>3.5.2</mybatis.version>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.ken</groupId>
+            <artifactId>coders-common</artifactId>
+        </dependency>
+    </dependencies>
+
+    
+</project>

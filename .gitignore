@@ -1,0 +1,5 @@
+# 项目排除路径
+/coders-common/target/
+/problem-provider/problem-api/target/
+/problem-provider/problem-generator/target/
+/problem-provider/problem-service/target/
